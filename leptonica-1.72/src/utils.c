@@ -181,7 +181,9 @@
 
 #ifdef _WIN32
 #include <windows.h>
-#else
+#ifdef LEPTONICA_WINRT
+#include "winrtutils.h"
+#endif
 #include <sys/stat.h>  /* for stat, mkdir(2) */
 #include <sys/types.h>
 #endif
@@ -221,7 +223,12 @@ char    *envsev;
     PROCNAME("setMsgSeverity");
 
     oldsev = LeptMsgSeverity;
-    if (newsev == L_SEVERITY_EXTERNAL) {
+	if (newsev == L_SEVERITY_EXTERNAL) {
+#ifdef LEPTONICA_WINRT
+		L_WARNING("L_SEVERITY_EXTERNAL option was used, however Windows Store/Phone Apps do not have access to environment variables\n",
+			procName);
+#else
+// 
         envsev = getenv("LEPT_MSG_SEVERITY");
         if (envsev) {
             LeptMsgSeverity = atoi(envsev);
@@ -230,7 +237,10 @@ char    *envsev;
             L_WARNING("environment var LEPT_MSG_SEVERITY not defined\n",
                       procName);
         }
-    } else {
+#endif
+	}
+	else
+	{
         LeptMsgSeverity = newsev;
         L_INFO("message severity set to %d\n", procName, newsev);
     }
@@ -1923,7 +1933,6 @@ lept_free(void *ptr)
     return;
 }
 
-
 /*--------------------------------------------------------------------*
  *                Cross-platform file system operations               *
  *         [ These only write to /tmp or its subdirectories ]         *
@@ -2235,8 +2244,8 @@ l_int32  ret;
     ret = remove(filepath);
 #else
         /* Set attributes to allow deletion of read-only files */
-    SetFileAttributes(filepath, FILE_ATTRIBUTE_NORMAL);
-    ret = DeleteFile(filepath) ? 0 : 1;
+    SetFileAttributesA(filepath, FILE_ATTRIBUTE_NORMAL);
+    ret = DeleteFileA(filepath) ? 0 : 1;
 #endif  /* !_WIN32 */
 
     return ret;
@@ -2312,7 +2321,7 @@ l_int32  ret;
     if (!ret)
         remove(srcpath);
 #else
-    ret = MoveFileEx(srcpath, newpath,
+    ret = MoveFileExA(srcpath, newpath,
                      MOVEFILE_COPY_ALLOWED | MOVEFILE_REPLACE_EXISTING) ? 0 : 1;
 #endif
 
@@ -2805,7 +2814,7 @@ l_int32  dirlen, namelen, size;
 #ifdef _WIN32
             /* Start with the temp dir */
         char  dirt[MAX_PATH];
-        GetTempPath(sizeof(dirt), dirt);  /* get the windows temp directory */
+        GetTempPathA(sizeof(dirt), dirt);  /* get the windows temp directory */
         stringCopy(pathout, dirt, strlen(dirt) - 1);
 
             /* Add a special subdirectory if it's not already there.  This is

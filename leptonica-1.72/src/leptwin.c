@@ -82,6 +82,7 @@ DSImageBitsSize(LPBITMAPINFO pbmi)
     return 0;
 }
 
+#ifndef LEPTONICA_WINRT
 /* **********************************************************************
   DWORD ImageBitsSize(HBITMAP hbitmap)
 
@@ -118,6 +119,7 @@ ImageBitsSize(HBITMAP hBitmap)
     }
     return 0;
 }
+#endif /* LEPTONICA_WINRT */
 
 /*!
  *  setColormap(LPBITMAPINFO pbmi, PIXCMAP *cmap)
@@ -239,6 +241,8 @@ LPDWORD       pMasks;
     return pbmi;
 }
 
+#ifndef LEPTONICA_WINRT
+
 /* **********************************************************************
   HBITMAP DSCreateDIBSection(l_int32 width, l_int32 height, l_int32 depth,
                              PIXCMAP *cmap)
@@ -282,7 +286,6 @@ LPBYTE        pBits;
 
     return hBitmap;
 }
-
 
 /*!
  *  pixGetWindowsHBITMAP()
@@ -360,5 +363,6 @@ PIXCMAP   *cmap;
 
     return hBitmap;
 }
+#endif
 
 #endif   /* _WIN32 */

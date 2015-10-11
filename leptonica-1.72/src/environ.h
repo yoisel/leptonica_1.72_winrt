@@ -97,10 +97,10 @@ typedef uintptr_t l_uintptr_t;
  *  non-functioning stubs to be linked.
  */
 #if !defined(HAVE_CONFIG_H) && !defined(ANDROID_BUILD)
-#define  HAVE_LIBJPEG     1
-#define  HAVE_LIBTIFF     1
-#define  HAVE_LIBPNG      1
-#define  HAVE_LIBZ        1
+#define  HAVE_LIBJPEG     0
+#define  HAVE_LIBTIFF     0
+#define  HAVE_LIBPNG      0
+#define  HAVE_LIBZ        0
 #define  HAVE_LIBGIF      0
 #define  HAVE_LIBUNGIF    0
 #define  HAVE_LIBWEBP     0
@@ -489,6 +489,10 @@ LEPT_DLL extern l_int32  LeptMsgSeverity;
  *------------------------------------------------------------------------*/
 #ifdef _MSC_VER
 #define snprintf(buf, size, ...)  _snprintf_s(buf, size, _TRUNCATE, __VA_ARGS__)
+#endif
+
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY==WINAPI_FAMILY_PC_APP || WINAPI_FAMILY==WINAPI_FAMILY_PHONE_APP)
+#define LEPTONICA_WINRT
 #endif
 
 

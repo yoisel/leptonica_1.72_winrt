@@ -80,6 +80,10 @@
 #include <string.h>
 #include "allheaders.h"
 
+#ifdef LEPTONICA_WINRT
+#include "winrtutils.h"
+#endif
+
     /*   Special flag for pixWrite().  The default for both unix and     */
     /*   windows is to use whatever filename is given, as opposed to     */
     /*   insuring the filename extension matches the image compression.  */
@@ -944,6 +948,7 @@ char            fullpath[_MAX_PATH];
 
 #else  /* _WIN32 */
 
+#ifndef LEPTONICA_WINRT
         /* Windows: L_DISPLAY_WITH_IV */
     pathname = genPathname(tempname, NULL);
     _fullpath(fullpath, pathname, sizeof(fullpath));
@@ -957,7 +962,7 @@ char            fullpath[_MAX_PATH];
     }
     ignore = system(buffer);
     FREE(pathname);
-
+#endif  /* LEPTONICA_WINRT */
 #endif  /* _WIN32 */
 
     pixDestroy(&pix1);

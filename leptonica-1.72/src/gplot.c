@@ -396,8 +396,12 @@ l_int32  ignore;
        snprintf(buf, L_BUF_SIZE,
                "wgnuplot -persist %s", gplot->cmdname);
 #endif  /* _WIN32 */
-    ignore = system(buf);  /* gnuplot || wgnuplot */
-    return 0;
+
+#ifndef LEPTONICA_WINRT
+   ignore = system(buf);  /* gnuplot || wgnuplot */
+#endif
+
+   return 0;
 }
 
 

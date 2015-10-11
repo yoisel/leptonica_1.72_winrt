@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{6d15427f-21ac-43a7-95e3-c528c72dd2b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{8af87266-954e-4d60-bdfd-7b154b6ef685}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="leptonica_uwp_win10.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\..\src\zlibmemstub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zlibmem.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xtractprotos.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\writefile.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\webpiostub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\webpio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\watershed.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\warper.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\viewfiles.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tiffiostub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tiffio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\textops.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sudoku.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stringcode.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stack.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\spixio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\skew.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\shear.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\selgen.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sel2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sel1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\seedfilllow.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\seedfill.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scalelow.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scale.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sarray.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\runlength.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rotateshear.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rotateorth.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rotateamlow.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rotateam.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rotate.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\roplow.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ropiplow.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rop.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\regutils.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\recogtrain.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\recogident.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\recogdid.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\recogbasic.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\readfile.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\readbarcode.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rank.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\queue.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\quadtree.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptra.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptafunc1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptabasic.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\psio2stub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\psio2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\psio1stub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\psio1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\projective.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pnmiostub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pnmio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pngiostub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pngio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pixtiling.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pixlabel.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pixconv.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pixcomp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pixarith.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pixalloc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pixafunc2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pixafunc1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pixacc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pixabasic.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pix5.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pix4.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pix3.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pix2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pix1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pdfio2stub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pdfio2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pdfio1stub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pdfio1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\partition.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\parseprotos.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\paintcmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pageseg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\numafunc2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\numafunc1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\numabasic.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\morphseq.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\morphdwa.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\morphapp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\morph.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\maze.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\list.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libversions.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leptwin.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kernel.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jpegiostub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jpegio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jp2kiostub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jp2kio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jp2kheaderstub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jp2kheader.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jbclass.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\heap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\grayquantlow.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\grayquant.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graymorph.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gplot.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gifiostub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gifio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fpix2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fpix1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fmorphgenlow.1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fmorphgen.1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fmorphauto.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fliphmtgen.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\flipdetect.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\finditalic.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fhmtgenlow.1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fhmtgen.1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fhmtauto.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\enhance.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\endiantest.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\encoding.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\edge.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dwacomblow.2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dwacomb.2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dnabasic.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dewarp4.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dewarp3.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dewarp2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dewarp1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\correlscore.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\convolve.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\convertfiles.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\conncomp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\compare.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\colorspace.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\colorseg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\colorquant2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\colorquant1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\colormorph.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\colormap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\coloring.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\colorcontent.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\classapp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ccthin.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ccbord.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bytearray.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\boxfunc4.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\boxfunc3.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\boxfunc2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\boxfunc1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\boxbasic.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bootnumgen.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bmpiostub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bmpio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bmf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\blend.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\binreduce.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\binexpand.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\binarize.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bilinear.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bilateral.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bbuffer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\baseline.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bardecode.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arrayaccess.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\affinecompose.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\affine.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\adaptmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\winrtutils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="leptonica_uwp_win10.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\..\src\watershed.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sudoku.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stringcode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stack.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\regutils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\recog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\readbarcode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\queue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ptra.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pix.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\morph.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\list.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\leptwin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\jbclass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\imageio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\heap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gplot.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\freetype.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\environ.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\endianness.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dewarp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ccbord.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\bmp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\bmfdata.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\bmf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\bilateral.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\bbuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arrayaccess.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\array.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\alltypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\allheaders.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\winrtutils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

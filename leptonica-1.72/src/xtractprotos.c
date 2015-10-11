@@ -84,6 +84,9 @@
 
 #include <string.h>
 #include "allheaders.h"
+#ifdef LEPTONICA_WINRT
+#include "winrtutils.h"
+#endif
 
 static const l_int32  L_BUF_SIZE = 512;
 

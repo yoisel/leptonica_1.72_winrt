@@ -1905,7 +1905,18 @@ struct dirent  *pdirentry;
 
 #else  /* _WIN32 */
 
-    /* http://msdn2.microsoft.com/en-us/library/aa365200(VS.85).aspx */
+#ifdef LEPTONICA_WINRT
+
+SARRAY *
+getFilenamesInDirectory(const char  *dirname)
+{
+	//TODO: See if this can be implemented in WinRT using StorageFolder and StorageFile classes
+	return 0;
+}
+
+#else /* LEPTONICA_WINRT */
+
+ /* http://msdn2.microsoft.com/en-us/library/aa365200(VS.85).aspx */
 #include <windows.h>
 
 SARRAY *
@@ -1954,5 +1965,6 @@ WIN32_FIND_DATAA  ffd;
     FREE(pszDir);
     return safiles;
 }
+#endif
 
 #endif  /* _WIN32 */
