@@ -10,7 +10,20 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleApp", "..\SampleApp\S
 		{0B296545-8036-48BE-8425-DEF2C4055048} = {0B296545-8036-48BE-8425-DEF2C4055048}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "leptonica_uwp_win81", "leptonica_uwp_win81", "{BFF76A13-78A7-4CFA-840E-B95BBA84FFAC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leptonica_uwp_win81.Shared", "..\leptonica_uwp_win81\leptonica_uwp_win81.Shared\leptonica_uwp_win81.Shared.vcxitems", "{774FCC0E-AFEB-408E-B81C-019664E2A30C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leptonica_uwp_win81.Windows", "..\leptonica_uwp_win81\leptonica_uwp_win81.Windows\leptonica_uwp_win81.Windows.vcxproj", "{30148D76-9B82-42FA-8934-66DCCD5D411B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leptonica_uwp_win81.WindowsPhone", "..\leptonica_uwp_win81\leptonica_uwp_win81.WindowsPhone\leptonica_uwp_win81.WindowsPhone.vcxproj", "{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\leptonica_uwp_win81\leptonica_uwp_win81.Shared\leptonica_uwp_win81.Shared.vcxitems*{30148d76-9b82-42fa-8934-66dccd5d411b}*SharedItemsImports = 4
+		..\leptonica_uwp_win81\leptonica_uwp_win81.Shared\leptonica_uwp_win81.Shared.vcxitems*{774fcc0e-afeb-408e-b81c-019664e2a30c}*SharedItemsImports = 9
+		..\leptonica_uwp_win81\leptonica_uwp_win81.Shared\leptonica_uwp_win81.Shared.vcxitems*{21d937e5-53ea-4eed-b9ba-6ff6be12d71c}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
 		Debug|x64 = Debug|x64
@@ -50,8 +63,35 @@ Global
 		{7E2C16E8-A801-4C0A-A481-1CE4EF79ED17}.Release|x86.ActiveCfg = Release|Win32
 		{7E2C16E8-A801-4C0A-A481-1CE4EF79ED17}.Release|x86.Build.0 = Release|Win32
 		{7E2C16E8-A801-4C0A-A481-1CE4EF79ED17}.Release|x86.Deploy.0 = Release|Win32
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Debug|ARM.Build.0 = Debug|ARM
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Debug|x64.ActiveCfg = Debug|x64
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Debug|x64.Build.0 = Debug|x64
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Debug|x86.ActiveCfg = Debug|Win32
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Debug|x86.Build.0 = Debug|Win32
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Release|ARM.ActiveCfg = Release|ARM
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Release|ARM.Build.0 = Release|ARM
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Release|x64.ActiveCfg = Release|x64
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Release|x64.Build.0 = Release|x64
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Release|x86.ActiveCfg = Release|Win32
+		{30148D76-9B82-42FA-8934-66DCCD5D411B}.Release|x86.Build.0 = Release|Win32
+		{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C}.Debug|ARM.Build.0 = Debug|ARM
+		{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C}.Debug|x64.ActiveCfg = Debug|Win32
+		{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C}.Debug|x86.ActiveCfg = Debug|Win32
+		{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C}.Debug|x86.Build.0 = Debug|Win32
+		{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C}.Release|ARM.ActiveCfg = Release|ARM
+		{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C}.Release|ARM.Build.0 = Release|ARM
+		{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C}.Release|x64.ActiveCfg = Release|Win32
+		{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C}.Release|x86.ActiveCfg = Release|Win32
+		{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{774FCC0E-AFEB-408E-B81C-019664E2A30C} = {BFF76A13-78A7-4CFA-840E-B95BBA84FFAC}
+		{30148D76-9B82-42FA-8934-66DCCD5D411B} = {BFF76A13-78A7-4CFA-840E-B95BBA84FFAC}
+		{21D937E5-53EA-4EED-B9BA-6FF6BE12D71C} = {BFF76A13-78A7-4CFA-840E-B95BBA84FFAC}
 	EndGlobalSection
 EndGlobal

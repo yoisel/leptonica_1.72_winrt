@@ -110,8 +110,8 @@
     </ClCompile>
     <Link />
     <Link>
-      <AdditionalDependencies>leptonica_uwp_win10.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)\..\leptonica_uwp_win10;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>leptonica_uwp_win10_$(Configuration)_$(Platform).lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -121,8 +121,8 @@
     </ClCompile>
     <Link />
     <Link>
-      <AdditionalDependencies>leptonica_uwp_win10.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)\..\leptonica_uwp_win10;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>leptonica_uwp_win10_$(Configuration)_$(Platform).lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -131,8 +131,8 @@
       <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>leptonica_uwp_win10.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)\..\leptonica_uwp_win10;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>leptonica_uwp_win10_$(Configuration)_$(Platform).lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -142,8 +142,8 @@
     </ClCompile>
     <Link />
     <Link>
-      <AdditionalDependencies>leptonica_uwp_win10.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)\..\leptonica_uwp_win10;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>leptonica_uwp_win10_$(Configuration)_$(Platform).lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -153,8 +153,8 @@
     </ClCompile>
     <Link />
     <Link>
-      <AdditionalDependencies>leptonica_uwp_win10.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)\..\leptonica_uwp_win10;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>leptonica_uwp_win10_$(Configuration)_$(Platform).lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -164,8 +164,8 @@
     </ClCompile>
     <Link />
     <Link>
-      <AdditionalDependencies>leptonica_uwp_win10.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)\..\leptonica_uwp_win10;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>leptonica_uwp_win10_$(Configuration)_$(Platform).lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
