@@ -300,5 +300,38 @@ inline void _splitpath(LPCWSTR path, LPSTR notused1, LPSTR notused2, LPSTR name,
 	_splitpath(W2A(path), NULL, NULL, name, NULL);
 }
 
+#ifdef _WINRT_WIN8
+
+#include "synchapi.h"
+
+inline HANDLE WINAPI CreateMutex(
+	LPSECURITY_ATTRIBUTES lpMutexAttributes,
+	BOOL                  bInitialOwner,
+	LPCTSTR               lpName
+	)
+{
+	return CreateMutexEx(lpMutexAttributes, lpName, bInitialOwner ? CREATE_MUTEX_INITIAL_OWNER : 0, STANDARD_RIGHTS_ALL);
+}
+
+inline DWORD WINAPI WaitForSingleObject(
+	HANDLE hHandle,
+	DWORD  dwMilliseconds
+	)
+{
+	return WaitForSingleObjectEx(hHandle, dwMilliseconds, FALSE);
+}
+
+inline HANDLE WINAPI CreateSemaphore(
+	LPSECURITY_ATTRIBUTES lpSemaphoreAttributes,
+	LONG                  lInitialCount,
+	LONG                  lMaximumCount,
+	LPCTSTR               lpName
+	)
+{
+	return CreateSemaphoreEx( lpSemaphoreAttributes, lInitialCount, lMaximumCount, lpName, 0, STANDARD_RIGHTS_ALL );
+}
+
+
+#endif
 
 #endif

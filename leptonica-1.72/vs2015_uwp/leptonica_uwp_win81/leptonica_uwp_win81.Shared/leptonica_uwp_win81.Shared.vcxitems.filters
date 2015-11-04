@@ -2,8 +2,6 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)targetver.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)leptonica_uwp_win81.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\src\allheaders.h">
       <Filter>include</Filter>
     </ClInclude>
@@ -102,10 +100,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
-      <PrecompiledHeader>Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)leptonica_uwp_win81.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\adaptmap.c">
       <Filter>src</Filter>
     </ClCompile>

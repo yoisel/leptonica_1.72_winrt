@@ -2321,8 +2321,16 @@ l_int32  ret;
     if (!ret)
         remove(srcpath);
 #else
+#ifdef LEPTONICA_WINRT
+	{
+		USES_CONVERSION;
+		ret = MoveFileExW(A2W(srcpath), A2W(newpath), 
+			MOVEFILE_COPY_ALLOWED | MOVEFILE_REPLACE_EXISTING) ? 0 : 1;
+	}
+#else
     ret = MoveFileExA(srcpath, newpath,
                      MOVEFILE_COPY_ALLOWED | MOVEFILE_REPLACE_EXISTING) ? 0 : 1;
+#endif
 #endif
 
     FREE(srcpath);

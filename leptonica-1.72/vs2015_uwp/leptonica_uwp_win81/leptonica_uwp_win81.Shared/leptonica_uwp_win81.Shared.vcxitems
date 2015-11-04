@@ -46,9 +46,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\src\sudoku.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\src\watershed.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\src\winrtutils.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)leptonica_uwp_win81.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)targetver.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\adaptmap.c" />
@@ -221,10 +219,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\xtractprotos.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\zlibmem.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\zlibmemstub.c" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)leptonica_uwp_win81.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
-      <PrecompiledHeader>Create</PrecompiledHeader>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ProjectCapability Include="SourceItemsFromImports" />
