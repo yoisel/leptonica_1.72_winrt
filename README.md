@@ -1,3 +1,6 @@
 # leptonica_1.72_winrt
 
-This is an attempt at building leptonica for WinRT (Universal Windows Platform with VS2015, for use in Windows Store Apps and Windows Phone Apps) 
+This is a fork of the Leptonica library, modified for WinRT (for use in Windows Store Apps and Windows Phone Apps) 
+
+Supported platforms: Universal Windows Platform with VS2015, Windows 8.1 Store Apps, Windows Phone 8.1
+Supported CPU architectures: x86, x64 and ARM
